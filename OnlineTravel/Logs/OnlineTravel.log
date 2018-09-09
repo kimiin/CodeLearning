@@ -1,0 +1,56 @@
+09/09/2018 17:27:12 onlineTravelLogger ===================================================================================
+09/09/2018 17:27:12 onlineTravelLogger INFO: New driver instantiated
+09/09/2018 17:27:12 onlineTravelLogger ===================================================================================
+09/09/2018 17:27:12 onlineTravelLogger ===================================================================================
+09/09/2018 17:27:12 onlineTravelLogger INFO: WebDriverWait applied on the driver for 10 seconds
+09/09/2018 17:27:12 onlineTravelLogger ===================================================================================
+09/09/2018 17:27:41 onlineTravelLogger ===================================================================================
+09/09/2018 17:27:41 onlineTravelLogger INFO: Web application launched
+09/09/2018 17:27:41 onlineTravelLogger ===================================================================================
+09/09/2018 17:27:42 onlineTravelLogger ===================================================================================
+09/09/2018 17:27:42 onlineTravelLogger INFO: Web application is set maximized.
+09/09/2018 17:27:42 onlineTravelLogger ===================================================================================
+09/09/2018 17:27:42 onlineTravelLogger ****************************************************************************************
+09/09/2018 17:27:42 onlineTravelLogger ****************************************************************************************
+09/09/2018 17:27:42 onlineTravelLogger $$$$$$$$$$$$$$$$$$$$$                 Selenium_Test_002       $$$$$$$$$$$$$$$$$$$$$$$$$
+09/09/2018 17:27:42 onlineTravelLogger ****************************************************************************************
+09/09/2018 17:27:42 onlineTravelLogger ****************************************************************************************
+09/09/2018 17:27:43 onlineTravelLogger ===================================================================================
+09/09/2018 17:27:43 onlineTravelLogger INFO: Username picked from Excel is user@phptravels.com
+09/09/2018 17:27:43 onlineTravelLogger ===================================================================================
+09/09/2018 17:27:43 onlineTravelLogger ===================================================================================
+09/09/2018 17:27:43 onlineTravelLogger INFO: Password picked from Excel is user@phptravels.com
+09/09/2018 17:27:43 onlineTravelLogger ===================================================================================
+09/09/2018 17:27:43 onlineTravelLogger ===================================================================================
+09/09/2018 17:27:43 onlineTravelLogger INFO: The element: [[ChromeDriver: chrome on XP (b8addd2dc65d3f3536a96c81fdf05b05)] -> xpath: //div[@id='collapse']//li[@id='li_myaccount']] of Landing Page is found
+09/09/2018 17:27:43 onlineTravelLogger ===================================================================================
+09/09/2018 17:27:43 onlineTravelLogger ===================================================================================
+09/09/2018 17:27:43 onlineTravelLogger INFO: Click action performed on My Account link
+09/09/2018 17:27:43 onlineTravelLogger ===================================================================================
+09/09/2018 17:27:43 onlineTravelLogger ===================================================================================
+09/09/2018 17:27:43 onlineTravelLogger INFO: The element: [[ChromeDriver: chrome on XP (b8addd2dc65d3f3536a96c81fdf05b05)] -> xpath: //div[@id='collapse']//li[@id='li_myaccount']//a[contains(@href,'login')]] of Landing Page is found
+09/09/2018 17:27:43 onlineTravelLogger ===================================================================================
+09/09/2018 17:27:45 onlineTravelLogger ===================================================================================
+09/09/2018 17:27:45 onlineTravelLogger INFO: Click action performed on Login link
+09/09/2018 17:27:45 onlineTravelLogger ===================================================================================
+09/09/2018 17:27:46 onlineTravelLogger ===================================================================================
+09/09/2018 17:27:46 onlineTravelLogger INFO: The element: [[ChromeDriver: chrome on XP (b8addd2dc65d3f3536a96c81fdf05b05)] -> xpath: //form[@id='loginfrm']//input[@name='username']] of LogIn Page is found
+09/09/2018 17:27:46 onlineTravelLogger ===================================================================================
+09/09/2018 17:27:47 onlineTravelLogger ===================================================================================
+09/09/2018 17:27:47 onlineTravelLogger INFO: Username entered in the Email text box
+09/09/2018 17:27:47 onlineTravelLogger ===================================================================================
+09/09/2018 17:27:47 onlineTravelLogger ===================================================================================
+09/09/2018 17:27:47 onlineTravelLogger INFO: The element: [[ChromeDriver: chrome on XP (b8addd2dc65d3f3536a96c81fdf05b05)] -> xpath: //form[@id='loginfrm']//input[@name='password']] of LogIn Page is found
+09/09/2018 17:27:47 onlineTravelLogger ===================================================================================
+09/09/2018 17:27:47 onlineTravelLogger ===================================================================================
+09/09/2018 17:27:47 onlineTravelLogger INFO: Pasword entered in the Password text box
+09/09/2018 17:27:47 onlineTravelLogger ===================================================================================
+09/09/2018 17:27:47 onlineTravelLogger ===================================================================================
+09/09/2018 17:27:47 onlineTravelLogger INFO: The element: [[ChromeDriver: chrome on XP (b8addd2dc65d3f3536a96c81fdf05b05)] -> xpath: //form[@id='loginfrm']//button[@type='submit']] of LogIn Page is found
+09/09/2018 17:27:47 onlineTravelLogger ===================================================================================
+09/09/2018 17:27:47 onlineTravelLogger ===================================================================================
+09/09/2018 17:27:47 onlineTravelLogger INFO: Click action performed on Login button
+09/09/2018 17:27:47 onlineTravelLogger ===================================================================================
+09/09/2018 17:27:47 onlineTravelLogger ===================================================================================
+09/09/2018 17:27:47 onlineTravelLogger INFO: The element: [[ChromeDriver: chrome on XP (b8addd2dc65d3f3536a96c81fdf05b05)] -> xpath: //div[@id='collapse']//a[contains(@href,'hotels')]] of Home Page is found
+09/09/2018 17:27:47 onlineTravelLogger ===================================================================================
