@@ -39,9 +39,7 @@ public class LogIn_Action {
 		LogIn_Page.btn_LogIn(driver,wait).click();
 		TestLog.info("Click action performed on Login button");
 	}
-	
-	
-	
+		
 	public static void Execute(WebDriver driver, WebDriverWait wait, String strUserName, String strPwd) 
 	{
 		Landing_Page.lnk_MyAccount(driver,wait).click();

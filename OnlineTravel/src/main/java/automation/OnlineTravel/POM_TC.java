@@ -1,12 +1,19 @@
 package automation.OnlineTravel;
 
+import org.junit.After;
+import org.junit.Assert;
+import org.junit.Before;
+import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import appActions.LogIn_Action;
 import pageObjects.Home_Page;
+import pageObjects.Hotel_Page;
 import utility.Constant;
+import utility.ExcelUtils;
+import utility.TestLog;
 
 public class POM_TC {
 
@@ -18,24 +25,31 @@ public class POM_TC {
 		
 		System.setProperty("webdriver.chrome.driver",Constant.CHROMEDRIVER_PATH);
  		driver = new ChromeDriver();
+ 		TestLog.info("New driver instantiated");
+ 		
  		wait=new WebDriverWait(driver, Constant.SHORT_WAIT);
+ 		TestLog.info("WebDriverWait applied on the driver for 10 seconds");
+ 		
  	    driver.get(Constant.URL);
+ 	    TestLog.info("Web application launched");
+ 	    
  	 	driver.manage().window().maximize(); 
- 	 	//driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);		 
+ 	 	TestLog.info("Web application is set maximized.");		 
  	 	
- 	 	LogIn_Action.Execute(driver,wait,Constant.USERNAME,Constant.PASSWORD);
- 	 	
-// 	 	Assert.assertTrue(Home_Page.headerText(driver,wait).getText().trim().contains("Hi, Johny Smith"));
-// 	 	Assert.assertTrue(driver.getTitle().trim().equals("PHPTRAVELS | Travel Technology Partner"));
-	    System.out.println("The user logged in successfully!");
+ 	 	TestLog.startTestCase("Selenium_Test_001");      
+ 	 	LogIn_Action.Execute(driver,wait,Constant.USERNAME,Constant.PASSWORD);	 	
+ 	 	Assert.assertTrue(Home_Page.headerText(driver,wait).getText().trim().contains("Hi, Johny Smith"));
+ 	 	Assert.assertTrue(driver.getTitle().trim().equals("My Account"));
+ 	 	TestLog.endTestCase("Selenium_Test_001");	
 	   
-	    System.out.println(Home_Page.lnk_Hotels(driver,wait).isDisplayed());	    
+ 	 	TestLog.startTestCase("Selenium_Test_002");      
 	    Home_Page.lnk_Hotels(driver,wait).click(); 
 	    Home_Page.lnk_Hotels(driver,wait).click(); 
-//	    Assert.assertTrue(driver.getTitle().trim().equals("Search Results"));
-	    System.out.println("The user went to Hotels page successfully.");
+	    Hotel_Page.formFilter(driver, wait);
+	    Assert.assertTrue(driver.getTitle().trim().equals("Search Results"));
+	    TestLog.endTestCase("Selenium_Test_002");	
  	 
- 	 	//driver.quit();
+ 	 	driver.quit();
 	}
 
 }
