@@ -2,22 +2,23 @@ package com.phptravel.core;
 
 import utility.TestLog;
 
-public class DriverAction {
+public class DriverAction extends DriverContext{
 	
 	public static void openBrowser(String url) {
-		DriverInit.getDriver().get(url);	
+		driver.get(url);	
 		TestLog.info("Web application launched");
-		DriverInit.getDriver().manage().window().maximize();
+		driver.manage().window().maximize();
 		TestLog.info("Web application is set maximized.");		
 	}
 	
 	public static void closeBrowser() {
-		DriverInit.getDriver().quit();
+		driver.quit();
 		TestLog.info("Web application is closed.");
 	}
 	
-	public static String getTitle() {		
-		return DriverInit.getDriver().getTitle();
-		//TestLog.info("Web Page Title is got");
+	public static String getTitle() {
+		String titlePage=driver.getTitle();
+		TestLog.info("Web Page Title is got");
+		return titlePage;		
 	}
 }

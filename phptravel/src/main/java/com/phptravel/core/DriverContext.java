@@ -2,28 +2,21 @@ package com.phptravel.core;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import utility.Constant;
 import utility.TestLog;
 
-public class DriverInit {
-
-	private static DriverInit instance;
-	private static WebDriver driver;
+public class DriverContext {
 	
-	private DriverInit(){
+	public static WebDriver driver;
+	public static WebDriverWait wait;
+
+	public static void initialization() {
+		
 		System.setProperty("webdriver.chrome.driver",Constant.CHROMEDRIVER_PATH);
 		driver=new ChromeDriver();
 		TestLog.info("New Chrome driver is instantiated");
+		wait = new WebDriverWait(driver, Constant.SHORT_WAIT);
 	}
-	
-	public static synchronized DriverInit getDriverInit() {
-		instance=new DriverInit();	
-		return instance;
-	}
-	
-	public static WebDriver getDriver(){
-		return driver;
-	}
-		
 }

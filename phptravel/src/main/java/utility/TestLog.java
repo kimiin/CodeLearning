@@ -7,27 +7,32 @@ public class TestLog {
 	//Initialize Log4j logs
 	private static Logger Log = Logger.getLogger("onlineTravelLogger");
 		
-	public static void startTestCase(String sTestCaseName){	 
-		Log.info("****************************************************************************************"); 
+	public static void startTestSuite(String sTestSuiteName){	 
 		Log.info("****************************************************************************************");	 
-		Log.info("$$$$$$$$$$$$$$$$$$$$$                 "+sTestCaseName+ "       $$$$$$$$$$$$$$$$$$$$$$$$$"); 
+		Log.info("*********************               "+sTestSuiteName+ "         ************************"); 
 		Log.info("****************************************************************************************");	 
-		Log.info("****************************************************************************************"); 
 	}
 	 
 	//This is to print log for the ending of the test case	 
-	 public static void endTestCase(String sTestCaseName){	 
-		Log.info("XXXXXXXXXXXXXXXXXXXXXXX             "+"-E---N---D-"+"             XXXXXXXXXXXXXXXXXXXXXX");	 
-		Log.info("X");	 
-		Log.info("X");	 
-		Log.info("X");	 
-		Log.info("X"); 
+	 public static void endTestSuite(String sTestSuiteName){	 
+		Log.info("*********************             "+"-E---N---D-TS"+"             ************************");	 
 	}
 	 
+	 public static void startTestCase(String sTestCaseName){	 
+			Log.info("========================================================================================");	 
+			Log.info("                                  "+sTestCaseName+ "                                 "); 
+			Log.info("========================================================================================");	 
+		}
+		 
+	//This is to print log for the ending of the test case	 
+	 public static void endTestCase(String sTestCaseName){	 
+		Log.info("==========================             "+"-E---N---D-TC"+"            ========================");	 
+	} 
+	 
 	public static void info(String message){
-		Log.error("===================================================================================");
+		Log.info("===================================================================================");
 		Log.info("INFO: "+ message);
-		Log.error("===================================================================================");
+		Log.info("===================================================================================");
 	}
         
     public static void warnName(String message) {
