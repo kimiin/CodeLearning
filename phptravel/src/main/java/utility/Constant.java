@@ -2,7 +2,6 @@ package utility;
 
 public class Constant {
 	
-	public static final String CHROMEDRIVER_PATH = "lib//chromedriver.exe";
 	public static final String URL               = "https://www.phptravels.net/";
 	public static final String USERNAME          = "user@phptravels.com";
 	public static final String PASSWORD          = "demouser";

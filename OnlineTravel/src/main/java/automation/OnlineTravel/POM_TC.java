@@ -1,9 +1,5 @@
 package automation.OnlineTravel;
 
-import org.junit.After;
-import org.junit.Assert;
-import org.junit.Before;
-import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -12,7 +8,6 @@ import appActions.LogIn_Action;
 import pageObjects.Home_Page;
 import pageObjects.Hotel_Page;
 import utility.Constant;
-import utility.ExcelUtils;
 import utility.TestLog;
 
 public class POM_TC {

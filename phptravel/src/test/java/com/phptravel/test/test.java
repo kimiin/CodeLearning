@@ -2,8 +2,8 @@ package com.phptravel.test;
 
 import org.testng.Assert;
 
-import com.phptravel.core.DriverAction;
 import com.phptravel.core.DriverInit;
+import com.phptravel.core.TestBase;
 import com.phptravel.page.HomePage;
 import com.phptravel.page.HotelPage;
 import com.phptravel.page.LandingPage;
@@ -21,18 +21,18 @@ public class test {
 		HotelPage hotelPage;
 			
 		//============		
-		DriverInit.getDriverInit();		
-		DriverAction.openBrowser(Constant.URL);
+		TestBase.initializeBrowser("chrome");
+		DriverInit.browser.goToUrl(Constant.URL);	
 	
 		landingPage=new LandingPage();		
 		loginPage = landingPage.goToLogInPage();
-		Assert.assertEquals(DriverAction.getTitle().trim(), "Login");
+		Assert.assertEquals(DriverInit.browser.getPageName().trim(), "Login");
 		
-		DriverAction.closeBrowser();
+		DriverInit.browser.closeBrowser();
 		
 		//=============
-		DriverInit.getDriverInit();		
-		DriverAction.openBrowser(Constant.URL);
+		TestBase.initializeBrowser("chrome");
+		DriverInit.browser.goToUrl(Constant.URL);	
 	
 		landingPage=new LandingPage();		
 		loginPage = landingPage.goToLogInPage();
@@ -40,9 +40,9 @@ public class test {
 		//homePage.waitHederText();
 		hotelPage=homePage.goToHotelPage();
 		hotelPage.waitFilterHotel();
-		Assert.assertEquals(DriverAction.getTitle().trim(), "Search Results");
+		Assert.assertEquals(DriverInit.browser.getPageName().trim(), "Search Results");
 		
-		DriverAction.closeBrowser();
+		DriverInit.browser.closeBrowser();
 		
 		
 	}

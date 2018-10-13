@@ -5,9 +5,8 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import com.phptravel.core.DriverAction;
-import com.phptravel.core.DriverContext;
 import com.phptravel.core.DriverInit;
+import com.phptravel.core.TestBase;
 import com.phptravel.page.HomePage;
 import com.phptravel.page.HotelPage;
 import com.phptravel.page.LandingPage;
@@ -15,7 +14,7 @@ import com.phptravel.page.LoginPage;
 
 import utility.Constant;
 
-public class HomePageTest extends DriverContext{
+public class HomePageTest extends TestBase{
 	
 	LandingPage landingPage;
 	LoginPage loginPage;
@@ -24,8 +23,8 @@ public class HomePageTest extends DriverContext{
 	
 	@BeforeTest
 	public void setUp() {
-		DriverInit.getDriverInit();		
-		DriverAction.openBrowser(Constant.URL);
+		TestBase.initializeBrowser("chrome");
+		DriverInit.browser.goToUrl(Constant.URL);		
 	}
 		
 	@Test
@@ -36,11 +35,11 @@ public class HomePageTest extends DriverContext{
 		homePage.waitHederText();
 		hotelPage=homePage.goToHotelPage();
 		hotelPage.waitFilterHotel();
-		Assert.assertEquals(DriverAction.getTitle().trim(), "Search Results");
+		Assert.assertEquals(DriverInit.browser.getPageName().trim(), "Search Results");
 	}
 	
 	@AfterTest
 	public void tearDown(){
-		//DriverAction.closeBrowser();
+		DriverInit.browser.closeBrowser();
 	}
 }

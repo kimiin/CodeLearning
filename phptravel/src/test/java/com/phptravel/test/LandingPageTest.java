@@ -5,33 +5,32 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import com.phptravel.core.DriverAction;
-import com.phptravel.core.DriverContext;
+import com.phptravel.core.DriverInit;
+import com.phptravel.core.TestBase;
 import com.phptravel.page.LandingPage;
 import com.phptravel.page.LoginPage;
 
 import utility.Constant;
 
-public class LandingPageTest extends DriverContext{
+public class LandingPageTest extends TestBase{
 	
 	private LandingPage landingPage;
 	private LoginPage loginPage;
 		
 	@BeforeMethod 
 	public void setUp() {
-		initialization();
-		DriverAction.openBrowser(Constant.URL);
+		TestBase.initializeBrowser("chrome");
+		DriverInit.browser.goToUrl(Constant.URL);		
 	}
 		
 	@Test (priority=1)	
 	public void verifyLoginPageLoadTitle(){		
-		landingPage=new LandingPage();		
-		loginPage = landingPage.goToLogInPage();
-		Assert.assertEquals(DriverAction.getTitle().trim(), "Login");
+		loginPage=landingPage.goToLogInPage();		
+		Assert.assertEquals(DriverInit.browser.getPageName().trim(), "Login");
 	}
 	
 	@AfterMethod 
 	public void tearDown(){		
-		DriverAction.closeBrowser();
+		DriverInit.browser.closeBrowser();
 	}
 }

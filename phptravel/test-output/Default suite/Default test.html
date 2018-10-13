@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/0/1</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Sep 29 23:31:20 ICT 2018</td>
+<td>Started on:</td><td>Sat Oct 13 20:22:06 ICT 2018</td>
 </tr>
-<tr><td>Total time:</td><td>305 seconds (305781 ms)</td>
+<tr><td>Total time:</td><td>32 seconds (32407 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,254 +67,18 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.phptravel.test.HotelPageTest.setUp()'><b>setUp</b><br>Test class: com.phptravel.test.HotelPageTest</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: timeout
-  (Session info: chrome=69.0.3497.100)
-  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
-System info: host: &apos;JRDR062&apos;, ip: &apos;192.168.55.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_151&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\vihoang\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:49969}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}
-Session ID: b90ac257a4dc5f72b54cdc655f636a93
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
-	at com.phptravel.core.DriverAction.openBrowser(DriverAction.java:8)
-	at com.phptravel.test.HotelPageTest.setUp(HotelPageTest.java:28)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1147805316", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1147805316'><pre>org.openqa.selenium.TimeoutException: timeout
-  (Session info: chrome=69.0.3497.100)
-  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
-System info: host: &apos;JRDR062&apos;, ip: &apos;192.168.55.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_151&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\vihoang\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:49969}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}
-Session ID: b90ac257a4dc5f72b54cdc655f636a93
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
-	at com.phptravel.core.DriverAction.openBrowser(DriverAction.java:8)
-	at com.phptravel.test.HotelPageTest.setUp(HotelPageTest.java:28)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>305</td>
-<td>com.phptravel.test.HotelPageTest@3bfdc050</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.phptravel.test.HotelPageTest.tearDown()'><b>tearDown</b><br>Test class: com.phptravel.test.HotelPageTest</td>
+<td title='com.phptravel.test.HomePageTest.verifyHotelPageLoadTitle()'><b>verifyHotelPageLoadTitle</b><br>Test class: com.phptravel.test.HomePageTest</td>
 <td></td>
-<td>0</td>
-<td>com.phptravel.test.HotelPageTest@3bfdc050</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.phptravel.test.HotelPageTest.verifyHotelPageLoadTitle()'><b>verifyHotelPageLoadTitle</b><br>Test class: com.phptravel.test.HotelPageTest</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: timeout
-  (Session info: chrome=69.0.3497.100)
-  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
-System info: host: &apos;JRDR062&apos;, ip: &apos;192.168.55.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_151&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\vihoang\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:49969}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}
-Session ID: b90ac257a4dc5f72b54cdc655f636a93
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
-	at com.phptravel.core.DriverAction.openBrowser(DriverAction.java:8)
-	at com.phptravel.test.HotelPageTest.setUp(HotelPageTest.java:28)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1396721535", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1396721535'><pre>org.openqa.selenium.TimeoutException: timeout
-  (Session info: chrome=69.0.3497.100)
-  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
-System info: host: &apos;JRDR062&apos;, ip: &apos;192.168.55.2&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_151&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\vihoang\AppData\Lo...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:49969}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}
-Session ID: b90ac257a4dc5f72b54cdc655f636a93
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
-	at com.phptravel.core.DriverAction.openBrowser(DriverAction.java:8)
-	at com.phptravel.test.HotelPageTest.setUp(HotelPageTest.java:28)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.phptravel.test.HotelPageTest@3bfdc050</td></tr>
+<td>13</td>
+<td>com.phptravel.test.HomePageTest@3bfdc050</td></tr>
 </table><p>
 </body>
 </html>
