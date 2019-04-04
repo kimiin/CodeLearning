@@ -10,7 +10,7 @@ import com.phptravel.core.TestBase;
 
 public class HomePage extends TestBase{
 		
-	@FindBy(how = How.XPATH, using = "//div[@id='collapse']//a[contains(@href,'hotels')]")
+	@FindBy(how = How.XPATH, using = "//div[@class='container']//li[@data-title='hotels']")
 	static WebElement lnkHotels;
 	@FindBy(how = How.XPATH, using = "//div[@class='container']//h3[contains(text(),'Hi, ')]")
 	static WebElement headerText;

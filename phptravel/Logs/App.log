@@ -1,0 +1,5 @@
+21/11/2018 00:55:26 phpTravelLogs Is navigating to arg0
+21/11/2018 00:55:38 phpTravelLogs Cliked on the element [[ChromeDriver: chrome on XP (336dc87e7eeb554586a918089e91ec5e)] -> xpath: //div[@class='container']//li[@id='li_myaccount']]
+21/11/2018 00:55:39 phpTravelLogs Cliked on the element [[ChromeDriver: chrome on XP (336dc87e7eeb554586a918089e91ec5e)] -> xpath: //div[@class='container']//li[@id='li_myaccount']//a[contains(@href,'login')]]
+21/11/2018 00:55:40 phpTravelLogs Cliked on the element [[ChromeDriver: chrome on XP (336dc87e7eeb554586a918089e91ec5e)] -> xpath: //form[@id='loginfrm']//button[@type='submit']]
+21/11/2018 00:55:44 phpTravelLogs Cliked on the element [[ChromeDriver: chrome on XP (336dc87e7eeb554586a918089e91ec5e)] -> xpath: //div[@class='container']//li[@data-title='hotels']]

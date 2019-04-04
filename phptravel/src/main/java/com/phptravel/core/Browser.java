@@ -18,7 +18,7 @@ public class Browser {
 	public void goToUrl(String url) {
 		driver.get(url);	
 		configBrowser();
-		TestLog.info("The URL is launched");		
+		//TestLog.info("The URL is launched");		
 	}
 	public void navigateToUrl(String url) {
 		driver.navigate().to(url);	
@@ -27,15 +27,15 @@ public class Browser {
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().implicitlyWait(Constant.SHORT_WAIT, TimeUnit.SECONDS);		 
-		TestLog.info("Complete configure browser");		
+		//TestLog.info("Complete configure browser");		
 	}	
 	public void closeBrowser() {
 		driver.quit();
-		TestLog.info("Web application is closed.");
+		//TestLog.info("Web application is closed.");
 	}	
 	public String getPageName() {
 		String titlePage=driver.getTitle();
-		TestLog.info("Web Page Title is got");
+		//TestLog.info("Web Page Title is got");
 		return titlePage;		
 	}
 }

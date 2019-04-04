@@ -9,9 +9,9 @@ import com.phptravel.core.TestBase;
 
 public class LandingPage extends TestBase{
 	
-	@FindBy(how=How.XPATH,using="//div[@id='collapse']//li[@id='li_myaccount']")
+	@FindBy(how=How.XPATH,using="//div[@class='container']//li[@id='li_myaccount']")
 	static WebElement lnkAccount;
-	@FindBy(how=How.XPATH,using="//div[@id='collapse']//li[@id='li_myaccount']//a[contains(@href,'login')]")
+	@FindBy(how=How.XPATH,using="//div[@class='container']//li[@id='li_myaccount']//a[contains(@href,'login')]")
 	static WebElement lnkLogIn;
 	
 	

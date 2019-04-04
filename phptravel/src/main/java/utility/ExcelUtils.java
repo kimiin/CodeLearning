@@ -30,10 +30,10 @@ public class ExcelUtils {
 			path=pathFile;
 		}
 		catch(IOException | EncryptedDocumentException e) {
-	         TestLog.error("The file "+path+" cannot be found.");
+	         //TestLog.error("The file "+path+" cannot be found.");
 		} 
 		catch (InvalidFormatException e1) {
-			TestLog.error("The file "+path+" is an invalid format.");
+			//TestLog.error("The file "+path+" is an invalid format.");
 			e1.printStackTrace();
 		}
 	}
@@ -66,7 +66,7 @@ public class ExcelUtils {
 	         out.close();  
 		}
 		catch(IOException | EncryptedDocumentException e) {
-			 TestLog.error("The file "+Constant.PATH_TESTDATA+Constant.FILE_TESTDATA+" cannot be found.");
+			 //TestLog.error("The file "+Constant.PATH_TESTDATA+Constant.FILE_TESTDATA+" cannot be found.");
 		} 
 	 			
 	}

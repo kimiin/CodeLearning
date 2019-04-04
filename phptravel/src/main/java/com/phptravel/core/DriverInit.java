@@ -13,10 +13,10 @@ public class DriverInit {
 		return driver;
 	}
 	
-	static void setDriver(WebDriver mdriver, WebDriverWait mwait) {
-		driver=mdriver;
-		wait=mwait;
+	static void setDriver(WebDriver driver, WebDriverWait wait) {
+		DriverInit.driver=driver;
+		DriverInit.wait=wait;
 		browser=new Browser();
-		browser.setBrowser(driver);
+		browser.setBrowser(getDriver());
 	}
 }
